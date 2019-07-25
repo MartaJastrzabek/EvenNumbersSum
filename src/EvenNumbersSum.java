@@ -4,10 +4,12 @@ public class EvenNumbersSum {
     public void displayEvenNumbers(){
         int i = 0;
         while (i<=100){
-            if(i%2==0){
-                System.out.print(i + ", ");
-                sum+=i;
+            if(i%2!=0){
+                i++;
+                continue;
             }
+            System.out.print(i + ", ");
+            sum+=i;
             i++;
         }
         System.out.println();
